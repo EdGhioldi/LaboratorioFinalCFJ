@@ -19,9 +19,7 @@ public class Computadora {
         this.raton = raton;
     }
 
-    public int getIdComputadora() {
-        return idComputadora;
-    }
+    public int getIdComputadora() {return idComputadora;}
     public String getNombre() {
         return nombre;
     }

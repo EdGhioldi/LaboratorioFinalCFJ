@@ -10,7 +10,7 @@ public class Orden {
 
     public Orden(){
         this.idOrden = ++Orden.contadorOrdenes;
-        this.computadoras = new Computadora[MAX_COMPUTADORAS];
+        this.computadoras = new Computadora[Orden.MAX_COMPUTADORAS];
     }
 
     public void agregarComputadora(Computadora computadoras){
@@ -23,7 +23,7 @@ public class Orden {
 
     public void mostrarOrden(){
         System.out.println( "\n" + "Id Orden: " + idOrden);
-        System.out.println("Computadoras de la orden: " + "\n");
+        System.out.println("Computadoras de la orden:" + "\n");
         for (int i = 0; i < this.contadorComputadora; i++) {
             System.out.println(this.computadoras[i]);
         }
