@@ -8,7 +8,7 @@ public class Computadora {
     private Raton raton;
     private static int contadorComputadoras;
 
-    public Computadora(){
+    private Computadora(){
         this.idComputadora = ++Computadora.contadorComputadoras;
     }
     public Computadora(String nombre, Monitor monitor, Teclado teclado, Raton raton) {
@@ -49,13 +49,12 @@ public class Computadora {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Computadora{");
-        sb.append("idComputadora=").append(idComputadora);
-        sb.append(", nombre='").append(nombre).append('\'');
-        sb.append(", monitor=").append(monitor);
-        sb.append(", teclado=").append(teclado);
-        sb.append(", raton=").append(raton);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("Computadora: {");
+        sb.append(" Id Computadora: ").append(idComputadora);
+        sb.append(", Nombre: '").append(nombre);
+        sb.append("} Monitor").append(monitor);
+        sb.append(" Teclado").append(teclado);
+        sb.append(" Raton").append(raton);
         return sb.toString();
     }
 }

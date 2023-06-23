@@ -4,7 +4,7 @@ public class Raton extends DispositivoEntrada{
     private int idRaton;
     private static int contadorRaton;
 
-    public Raton(){
+    private Raton(){
         this.idRaton = ++this.contadorRaton;
     }
     public Raton(String tipoEntrada, String marca) {
@@ -15,11 +15,11 @@ public class Raton extends DispositivoEntrada{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Raton{");
-        sb.append("idRaton=").append(idRaton);
-        sb.append(", tipoEntrada='").append(tipoEntrada).append('\'');
-        sb.append(", marca='").append(marca).append('\'');
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder(" { ");
+        sb.append(" Id Raton: ").append(idRaton);
+        sb.append(", Tipo de Entrada: '").append(tipoEntrada).append('\'');
+        sb.append(", Marca: '").append(marca).append('\'');
+        sb.append(" } ");
         return sb.toString();
     }
 }
